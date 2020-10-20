@@ -1,6 +1,5 @@
 let searchInput = document.getElementById('search');
 let searchButton = document.getElementById('do-search');
-let factor = document.getElementById('factor');
 let searchResults = document.getElementById('search-results');
 
 (function IIFE() {
@@ -9,7 +8,6 @@ let searchResults = document.getElementById('search-results');
         fetchSearch(query, searchResults);
     });
 
-    factor.addEventListener("keyup", keyBoardInput);
     searchInput.addEventListener("keyup", keyBoardInput);
 })();
 
